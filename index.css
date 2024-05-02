@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
+/* Resetting default styles */
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+}
+
+
+
+/* Header and Navigation Styling */
+.jumbotron {
+  background-color: black;
+}
+
+/* Styling for text with glow effect */
+.glow-text {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.glow-text::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -1px;
+  left: 0;
+  background: linear-gradient(to right, #ff0066, #ff6b00, #ffeb3b, #4caf50, #00bcd4, #673ab7, #ff0066);
+  background-size: 300%;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.glow-text:hover {
+  color: transparent;
+}
+
+.glow-text:hover::before {
+  opacity: 1;
+  animation: glow-animation 1.5s linear infinite;
+}
+
+@keyframes glow-animation {
+  0% {
+    background-position: 0 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Social Media Icons Styling */
+.Icon_ul {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+#github,
+#LinkedIn,
+#facebook {
+  font-size: 35px !important;
+  background-color: #333;
+  color: #fff;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5), 10px 1px 12px rgba(0, 0, 0, 0.5), 2px 2px 10px rgba(0, 0, 0, 0.5), 2px 2px 3px rgba(0, 0, 0, 0.5), inset 2px 2px 10px rgba(0, 0, 0, 0.5), inset 2px 2px 10px rgba(0, 0, 0, 0.5), inset 2px 2px 10px rgba(0, 0, 0, 0.5), inset 2px 2px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 29px;
+  padding: 10px 17px;
+  margin: 0 0px;
+  animation: animate 3s linear infinite;
+  text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff, 0 0 200px #0072ff;
+}
+
+#LinkedIn {
+  animation-delay: 0.3s;
+  font-size: 25px !important;
+}
+#facebook {
+  animation-delay: 0.7s;
+  font-size: 25px !important;
+}
+#github {
+  animation-delay: 0.1s;
+  font-size: 25px !important;
+}
+
+@keyframes animate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+/* Styling for the image */
+.pic_img {
+  border-radius: 50%;
+  box-shadow: 0 0 25px 15px rgba(0, 255, 255, 0.7);
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    border-color: rgba(0, 255, 0, 0.5);
+    box-shadow: 0 0 25px 15px rgba(0, 255, 0, 0.5);
+  }
+  25% {
+    border-color: rgba(128, 0, 128, 0.5);
+    box-shadow: 0 0 25px 15px rgba(128, 0, 128, 0.5);
+  }
+  50% {
+    border-color: rgba(0, 0, 255, 0.5);
+    box-shadow: 0 0 25px 15px rgba(0, 0, 255, 0.5);
+  }
+  100% {
+    border-color: rgba(255, 0, 0, 0.5);
+    box-shadow: 0 0 25px 15px rgba(255, 0, 0, 0.5);
+  }
+}
+
+
+
+
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .banner_section img {
+    display: none;
+  }
+
+  .social-links {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+/* Resetting default styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+/* Header and Navigation Styling */
+.jumbotron {
+  background-color: black;
+}
+
+/* Styling for text with glow effect */
+.glow-text {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.glow-text::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -1px;
+  left: 0;
+  background: linear-gradient(to right, #ff0066, #ff6b00, #ffeb3b, #4caf50, #00bcd4, #673ab7, #ff0066);
+  background-size: 300%;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.glow-text:hover {
+  color: transparent;
+}
+
+.glow-text:hover::before {
+  opacity: 1;
+  animation: glow-animation 1.5s linear infinite;
+}
+
+@keyframes glow-animation {
+  0% {
+    background-position: 0 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Social Media Icons Styling */
+.Icon_ul {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+#github,
+#LinkedIn,
+#facebook {
+  font-size: 35px;
+  background-color: #333;
+  color: #fff;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5), 10px 1px 12px rgba(0, 0, 0, 0.5), 2px 2px 10px rgba(0, 0, 0, 0.5), 2px 2px 3px rgba(0, 0, 0, 0.5), inset 2px 2px 10px rgba(0, 0, 0, 0.5), inset 2px 2px 10px rgba(0, 0, 0, 0.5), inset 2px 2px 10px rgba(0, 0, 0, 0.5), inset 2px 2px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 29px;
+  padding: 10px 17px;
+  margin: 0 0px;
+  animation: animate 3s linear infinite;
+  text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff, 0 0 200px #0072ff;
+}
+
+#LinkedIn {
+  animation-delay: 0.3s;
+}
+#facebook {
+  animation-delay: 0.7s;
+}
+#github {
+  animation-delay: 0.1s;
+}
+
+@keyframes animate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+/* Styling for the image */
+.pic_img {
+  border-radius: 50%;
+  box-shadow: 0 0 25px 15px rgba(0, 255, 255, 0.7);
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    border-color: rgba(0, 255, 0, 0.5);
+    box-shadow: 0 0 25px 15px rgba(0, 255, 0, 0.5);
+  }
+  25% {
+    border-color: rgba(128, 0, 128, 0.5);
+    box-shadow: 0 0 25px 15px rgba(128, 0, 128, 0.5);
+  }
+  50% {
+    border-color: rgba(0, 0, 255, 0.5);
+    box-shadow: 0 0 25px 15px rgba(0, 0, 255, 0.5);
+  }
+  100% {
+    border-color: rgba(255, 0, 0, 0.5);
+    box-shadow: 0 0 25px 15px rgba(255, 0, 0, 0.5);
+  }
+}
+
+/* Styling for CV button */
+#cv_btn {
+  all: unset;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  position: relative;
+  color: #f0f0f0;
+  cursor: pointer;
+  z-index: 1;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#cv_btn::after,
+#cv_btn::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all .4s;
+}
+
+#cv_btn::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  border-radius: 10px;
+}
+
+#cv_btn::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: #ffffff15;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+
+#cv_btn:hover::before {
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+}
+
+#cv_btn:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+
+#cv_btn:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
+} 
+
+/* Social links for resume page */
+.social_links {
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  padding-top: 20px;
+}
+
+/* Border styling for resume page */
+
+
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .banner_section img {
+    display: none;
+  }
+
+  .social-links {
+    text-align: center;
+    margin-top: 20px;
+  }
+  #content_display{
+    height: 500px;
+  }
+}

@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
+body{
+  color: #fff;
+  background-image: linear-gradient(to bottom, #87CEEB, #6495ED, #4169E1, white);
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* profile Summary */
+.profileSummary{
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5), 0px 0px 20px rgba(0, 0, 0, 0.4), 0px 0px 30px rgba(0, 0, 0, 0.3), 0px 0px 40px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    background-color: #fff;
+    color: #000;
+}
+
+
+/* for box hovering method */
+.profileSummary {
+  padding-bottom: 20px;
+  transition: padding-bottom 0.3s ease-in
+}
+
+.profileSummary:hover {
+  padding-bottom: 40px;
+  transition-timing-function: ease-out;
+}
+
+/* Border styling for resume page */
+#resume_border {
+    border-radius: 10px !important;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    opacity: 0.6;
+}
+/* borders for resume content */
+.Underlining {
+    position: relative;
+  }
+  
+  /* Styling for the line */
+  .Underlining::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 80px;
+    height: 2px;
+    background-color: #fff;
+  }
+
+  /* Social links for resume page */
+.social_links {
+    font-size: 30px;
+    padding-top: 20px;
+  }
+  
+  .social_links i{
+    color: #000;
+  }
+
+  /* Styling for CV button */
+#cv_btn {
+    all: unset;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    position: relative;
+    color: #f0f0f0;
+    cursor: pointer;
+    z-index: 1;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  #cv_btn::after,
+  #cv_btn::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -99999;
+    transition: all .4s;
+  }
+  
+  #cv_btn::before {
+    transform: translate(0%, 0%);
+    width: 100%;
+    height: 100%;
+    background: #000;
+    border-radius: 10px;
+  }
+  
+  #cv_btn::after {
+    transform: translate(10px, 10px);
+    width: 35px;
+    height: 35px;
+    background: #ffffff15;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 50px;
+  }
+  
+  #cv_btn:hover::before {
+    transform: translate(5%, 20%);
+    width: 110%;
+    height: 110%;
+  }
+  
+  #cv_btn:hover::after {
+    border-radius: 10px;
+    transform: translate(0, 0);
+    width: 100%;
+    height: 100%;
+  }
+  
+  #cv_btn:active::after {
+    transition: 0s;
+    transform: translate(0, 5%);
+  } 
+  
+  
+  
