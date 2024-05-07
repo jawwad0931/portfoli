@@ -128,6 +128,28 @@ body{
     transition: 0s;
     transform: translate(0, 5%);
   } 
+/* For screens smaller than 768px (sm breakpoint), make col-md-6 full width */
+@media (max-width: 767px) {
+  p {
+      font-size: 14px; /* Make it full width */
+  }
+  ul li{
+    font-size: 14px !important;
+  }
+}
+
+/* For screens larger than or equal to 768px (md breakpoint), retain the default width */
+@media (min-width: 768px) {
+   p {
+      /* You can adjust the width here as per your requirement */
+    font-size: 14px; /* For example, 50% width for medium screens */
+  }
+  ul li{
+    font-size: 14px !important;
+  }
+}
+
+
   
   
   
